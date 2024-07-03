@@ -4,24 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42f8d415-0a68-409f-8a38-f27121c997a8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/user.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/middlewares/.gitKeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/user.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/user.router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/user.service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/ApiResponse.js" afterDir="false" />
+    <list default="true" id="42f8d415-0a68-409f-8a38-f27121c997a8" name="Changes" comment="fix: .gitignore">
+      <change afterPath="$PROJECT_DIR$/public/.gitKeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,9 +30,9 @@
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2ik8XRjEtNAXREthb9dttPw1hep" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -63,7 +48,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "D:/Project-UniCon/UniCon-Backend",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -119,5 +104,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix: .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: .gitignore" />
   </component>
 </project>
