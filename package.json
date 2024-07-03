@@ -1,0 +1,23 @@
+{
+  "name": "unicon-backend",
+  "version": "1.0.0",
+  "description": "The backend for University Connect Application",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config src/index.js"
+  },
+  "keywords": [],
+  "author": "UniCon-Team",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.4",
+    "prettier": "^3.3.2"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.4"
+  }
+}
