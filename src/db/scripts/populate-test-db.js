@@ -44,8 +44,8 @@ const users = [
     startYear: 2019,
     currentSem: 6,
     userDetails: [
-      { semester: 1, rollNo: 201, batch: 'B1' },
-      { semester: 2, rollNo: 202, batch: 'B1' },
+      { semester: 1, rollNo: 21, batch: 'B1' },
+      { semester: 2, rollNo: 22, batch: 'B1' },
     ],
     isActivated: false,
   },
