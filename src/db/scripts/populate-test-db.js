@@ -14,48 +14,60 @@ import connectDB from '../index.js'; // Import connectDB function to connect to 
 
 const users = [
   {
-    fullName: 'First Name',
-    enrollmentNumber: 11,
+    fullName: 'Vanraj Desai',
+    enrollmentNumber: 22002170110023,
     branch: 'Computer Science',
     startYear: 2022,
     currentSem: 4,
     userDetails: [
-      { semester: 1, rollNo: 11, batch: 'A1' },
-      { semester: 2, rollNo: 12, batch: 'A1' },
+      { semester: 1, rollNo: 101, batch: 'A1' },
+      { semester: 2, rollNo: 102, batch: 'A2' },
+      { semester: 3, rollNo: 103, batch: 'A3' },
+      { semester: 4, rollNo: 104, batch: 'A2' },
     ],
     isActivated: true,
+    avatar: 'path/to/Vanraj_avtar.jpg',
+    password: 'password123', // Include password field but don't process it
   },
   {
-    fullName: 'name second',
-    enrollmentNumber: 12,
-    branch: 'Mechanical Engineering',
-    startYear: 2019,
-    currentSem: 6,
+    fullName: 'Het Shah',
+    enrollmentNumber: 22002170110024,
+    branch: 'Computer Science',
+    startYear: 2023,
+    currentSem: 2,
     userDetails: [
-      { semester: 1, rollNo: 21, batch: 'B1' },
-      { semester: 2, rollNo: 22, batch: 'B1' },
+      { semester: 1, rollNo: 201, batch: 'ME1' },
+      { semester: 2, rollNo: 202, batch: 'ME1' }
     ],
     isActivated: false,
+    avatar: 'path/to/Het_avtar.jpg',
+    password: 'Het123', // Include password field but don't process it
   },
 ];
 
+// Function to clear the database
 const clearDatabase = async () => {
   await User.deleteMany({}); // Delete all documents from the User collection
 };
 
 // Define an asynchronous function to populate the database
 const populateDatabase = async () => {
-  await clearDatabase(); // Clear the database first 
-  await User.insertMany(users); // Insert the predefined users into the database
-  console.log('Database populated!'); // Log success 
-  mongoose.connection.close(); //  connection close 
+  await clearDatabase(); // Clear the database first
+
+  for (let user of users) {
+    // Create a new user document without processing the password
+    const newUser = new User(user);
+    await newUser.save();
+  }
+  console.log('Database populated!'); // Log success
+  mongoose.connection.close(); // Close the connection
 };
 
 // Connect to the database and populate it
 connectDB()
   .then(() => {
     console.log('Connected to the database'); // Success message
-    return populateDatabase(); 
+    return populateDatabase();
   })
   .catch((error) => {
     console.error('Error populating database:', error); // Log error message
